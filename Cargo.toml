@@ -1,0 +1,30 @@
+[package]
+name = "island"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winit = "*"
+window-vibrancy = "*"
+windows = { version = "0.35.0", features = [
+  "alloc",
+  "UI_Xaml_Data",
+  "UI_Xaml_Controls",
+  "UI_Xaml_Hosting",
+  "UI_Xaml_Markup",
+  "UI_Xaml_Media",
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_System_LibraryLoader",
+  "Win32_UI_WindowsAndMessaging",
+  "Win32_System_WinRT",
+  "Win32_System_WinRT_Xaml",
+] }
+
+
+[build-dependencies]
+sxs-manifest = "*"
+winres = "*"
+
